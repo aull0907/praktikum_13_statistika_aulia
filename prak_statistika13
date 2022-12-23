@@ -1,0 +1,27 @@
+#Latihan Pertama NO.1
+dataku_aulia = read.delim("clipboard")
+View(dataku_aulia)
+wilcox.test(dataku_aulia$Sebelum,dataku_aulia$Setelah ,paired=TRUE)
+
+#Latihan Pertama NO.2
+dataku_aulia = read.delim("clipboard")
+View(dataku_aulia)
+wilcox.test(dataku_aulia$Sebelum,dataku_aulia$Sesudah ,paired=TRUE)
+
+#Latihan kedua NO.1
+df_aulia=read.delim("clipboard")
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_aulia$obat~df_aulia$grup)
+# where y is numeric and A is A binary factor
+head(df_aulia)
+rank(df_aulia$obat)
+
+#Latihan ketiga NO.1 (TUGAS)
+dataku_aulia = read.delim("clipboard")
+View(dataku_aulia)
+wilcox.test(dataku_aulia$Ganjil,dataku_aulia$Genap ,paired=TRUE)
+
+#Latihan ketiga NO.2 (TUGAS)
+dataku_aulia = read.delim("clipboard")
+View(dataku_aulia)
+wilcox.test(dataku_aulia$caffeine,dataku_aulia$placebo ,paired=TRUE)
